@@ -1,0 +1,5 @@
+commodity_code|price_origin|unit|type|commodity_description
+WTI_USD|NYMEX West Texas Intermediate crude oil price|USD/Barrel|futures|West Texas Intermediate (WTI) crude oil is the primary oil benchmark for North American markets and classified as light and sweet. 
+BRENT_CRUDE_USD|ICE Futures Brent crude oil price|USD/Barrel|futures|Originating from the North Sea, Brent serves as a key pricing benchmark for crude oil produced in Europe, Africa, and the Middle East. It's classified as light and sweet.
+NATURAL_GAS_USD|NYMEX Henry Hub natural gas price|USD/MMBtu|futures|Natural gas is a key global energy commodity and an important component in the production of electricity, heating, and fertilizers.
+UREA_USD|CME Group Urea Fertilizer price|USD/metric_ton|spot|Urea is a nitrogen-based fertilizer and an animal feed additive derived from natural gas.

@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: raw
+    database: etl-project-1-483215
+    schema: energy_market_raw
+    config:
+      freshness:
+        warn_after: {count: 1, period: day}
+        error_after: {count: 3, period: day}
+    loaded_at_field: updated_at
+    tables:
+      - name: wti_oil
+        identifier: wti_oil
+      - name: brent_oil
+        identifier: brent_oil
+      - name: nat_gas
+        identifier: natural_gas
+      - name: urea
+        identifier: urea

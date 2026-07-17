@@ -1,0 +1,21 @@
+# Airflow local artifacts
+logs/
+airflow.cfg
+airflow.db
+unittests.cfg
+webserver_config.py
+airflow-webserver.pid
+airflow-worker.pid
+airflow-scheduler.pid
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,14 @@
+seeds:
+  - name: dim_commodities
+    description: '{{ doc("dim_commodities") }}'
+    columns:
+      - name: commodity_code
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['WTI_USD', 'BRENT_CRUDE_USD', 'NATURAL_GAS_USD', 'UREA_USD']
+      - name: type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['spot', 'futures']
