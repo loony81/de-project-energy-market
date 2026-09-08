@@ -60,8 +60,10 @@ def load_data_from_gcs_to_bq():
 		            {"name": "formatted", "type": "STRING", "mode": "NULLABLE"},
                     {"name": "as_of", "type": "TIMESTAMP", "mode": "NULLABLE"},
                     {"name": "collected_at", "type": "TIMESTAMP", "mode": "NULLABLE"},
+                    {"name": "synthetic", "type": "STRING", "mode": "NULLABLE"},
                     {"name": "stale", "type": "STRING", "mode": "NULLABLE"},
-                    {"name": "age_days", "type": "STRING", "mode": "NULLABLE"}
+                    {"name": "age_days", "type": "STRING", "mode": "NULLABLE"},
+                    {"name": "changes_omitted", "type": "STRING", "mode": "NULLABLE"}
                 ]
             else:
                 specific_fields = [
