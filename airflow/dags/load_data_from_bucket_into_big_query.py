@@ -61,21 +61,21 @@ def load_data_from_gcs_to_bq():
                     {"name": "as_of", "type": "TIMESTAMP", "mode": "NULLABLE"},
                     {"name": "collected_at", "type": "TIMESTAMP", "mode": "NULLABLE"},
                     {"name": "synthetic", "type": "STRING", "mode": "NULLABLE"},
-                    {"name": "stale", "type": "STRING", "mode": "NULLABLE"},
-                    {"name": "age_days", "type": "STRING", "mode": "NULLABLE"},
-                    {"name": "changes_omitted", "type": "STRING", "mode": "NULLABLE"}
+                    {"name": "age_days", "type": "STRING", "mode": "NULLABLE"}
                 ]
             else:
                 specific_fields = [
                     {"name": "name", "type": "STRING", "mode": "NULLABLE"},           
-                    {"name": "change_24h", "type": "STRING", "mode": "NULLABLE"}
+                    {"name": "change_24h", "type": "STRING", "mode": "NULLABLE"},
+                    {"name": "data_status", "type": "STRING", "mode": "NULLABLE"}
                 ]
             common_fields = [
                 {"name": "source", "type": "STRING", "mode": "NULLABLE"},
                 {"name": "code", "type": "STRING", "mode": "NULLABLE"},
                 {"name": "updated_at", "type": "TIMESTAMP", "mode": "NULLABLE"},
                 {"name": "price", "type": "STRING", "mode": "NULLABLE"},# force it to be a STRING to prevent mismatch errors later
-                {"name": "currency", "type": "STRING", "mode": "NULLABLE"}
+                {"name": "currency", "type": "STRING", "mode": "NULLABLE"},
+                {"name": "stale", "type": "STRING", "mode": "NULLABLE"}
             ]
             # complete the schema by combining specific fields with common fields
             all_fields = specific_fields + common_fields
